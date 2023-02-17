@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  font: 62.5%;
+}
+
+.container {
+  display: flex;
+
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  flex: 0.7;
+  border-radius: 5rem;
+  cursor: pointer;
+  margin: 1rem;
+  transition: flex 0.7s ease-in;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.panel-1 {
+  background-image: url("img/1.jpg");
+}
+
+.panel-2 {
+  background-image: url("img/2.jpg");
+}
+
+.panel-3 {
+  background-image: url("img/3.jpg");
+}
+
+.panel-4 {
+  background-image: url("img/4.jpg");
+}
+
+.panel-5 {
+  background-image: url("img/5.jpg");
+}
+
+.panel h3 {
+  font-size: 1.6rem;
+  opacity: 0;
+  color: #000;
+  padding: 0.5rem;
+  background-color: #fdf0d5be;
+  margin-bottom: 3px;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width:900px){
+  .panel h3{
+  font-size:1.2rem;
+  padding:.2rem;
+
+  }
+
+  @media (max-width:600px){
+    .panel h3{
+    font-size:1rem;
+    padding:.1rem;
+      }
+  
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel-4,
+  .panel-5 {
+    display: none;
+  }
+}
