@@ -75,19 +75,19 @@ body {
   transition: opacity 0.3s ease-in 0.4s;
 }
 
-@media (max-width:900px){
-  .panel h3{
-  font-size:1.2rem;
-  padding:.2rem;
-
+@media (max-width: 900px) {
+  .panel h3 {
+    font-size: 1.2rem;
+    padding: 0.2rem;
   }
+}
 
-  @media (max-width:600px){
-    .panel h3{
-    font-size:1rem;
-    padding:.1rem;
-      }
-  
+@media (max-width: 600px) {
+  .panel h3 {
+    font-size: 1rem;
+    padding: 0.1rem;
+  }
+}
 
 @media (max-width: 480px) {
   .container {
